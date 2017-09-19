@@ -1,4 +1,4 @@
-GitRepositoriesView.GitDirectories=C\:\\Users\\rc179978\\Desktop\\Java\\Chapter-5\\.git;
-GitRepositoriesView.GitDirectories.relative=C\:\\Users\\rc179978\\Desktop\\Java\\Chapter-5\\.git;
-RepositorySearchDialogSearchPath=C\:\\Users\\rc179978\\Desktop\\Java\\Chapter-5
+GitRepositoriesView.GitDirectories=C\:\\Users\\rc179978\\Desktop\\Java\\Chapter5\\.git;C\:\\Users\\rc179978\\Desktop\\Chapter5\\.git;
+GitRepositoriesView.GitDirectories.relative=.git;C\:\\Users\\rc179978\\Desktop\\Chapter5\\.git;
+RepositorySearchDialogSearchPath=C\:\\Users\\rc179978\\Desktop\\Chapter5
 eclipse.preferences.version=1
