@@ -1,9 +1,10 @@
+package debugging;
 // FixDebugFive1
 // Adds your lunch bill
 // Burger and hot dog are $2.59
 // Grilled cheese and fish are $1.99
 // Fries are 89 cents
-import javax.swing.;
+import javax.swing.JOptionPane;
 public class FixDebugFive1
 {
    public static void main(String args[]) throws Exception
@@ -18,15 +19,21 @@ public class FixDebugFive1
          "Order please\n1 - Burger\2 - Hotdog" +
          "\n3 - Grilled cheese\n4 - Fish sandwich");
       usersChoice= Integer.parseInt(usersChoiceString);
-      if(usersChoice = 1 | usersChoice == 2)
+      if(usersChoice == 1 || usersChoice == 2)
+      {
          bill = bill + HIGH_PRICE;
+      }
       else
+      {
          bill = bill + MED_PRICE;
+      }
       usersChoiceString = JOptionPane.showInputDialog(null,
           "Fries with that?\n1 - Yes\n2 - No");
       usersChoice = Integer.parseInt(usersChoiceString);
-      if (userChoice = 1)
+      if (usersChoice == 1)
+      {
           bill = bill + LOW_PRICE;
       JOptionPane.showMessageDialog(null,"Bill is " + bill);
-
+      }
+   }
 }
