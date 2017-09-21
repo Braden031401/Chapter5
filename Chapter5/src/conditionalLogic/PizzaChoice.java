@@ -9,9 +9,9 @@ public class PizzaChoice {
 		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in); //Creates a new scanner
 		double Pizza = 0;
-		double S = 3.50;
-		double M = 4.00;
-		double L = 5.00;
+		double S = 4.00;
+		double M = 6.00;
+		double L = 8.00;
 		double Dessert = 4.00;
 		double toppings = .50;
 		double FinalPrice;
