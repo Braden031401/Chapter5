@@ -38,8 +38,20 @@ public class AscendingAndDescending {
 		{
 			numberLarge = number3;
 		}
+		if(number1 > number2 & number1 < number3)
+		{
+			numberMiddle = number1;
+		}
+		if(number2 > number1 & number2 < number3)
+		{
+			numberMiddle = number2;
+		}
+		if(number3 > number1 & number3 < number2)
+		{
+			numberMiddle = number3;
+		}
 		
-		System.out.println("The order from smallest to largest is "+ numberSmall +", "+ numberMiddle +", "+ numberLarge );
+		System.out.println("The order from smallest to largest is, "+ numberMiddle +", "+ numberLarge );
 		
 		
 		
