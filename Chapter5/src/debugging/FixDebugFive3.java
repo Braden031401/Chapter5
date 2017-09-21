@@ -42,7 +42,7 @@ public class FixDebugFive3
 	   {
        System.out.println("Valid - in Automotive Department");
 	   }
-     if(item <= 999 & item >= 500)
+     if(item <= 999 & item >= CUTOFF)
        {
        System.out.println("Valid - Item in Housewares Department");
        }
