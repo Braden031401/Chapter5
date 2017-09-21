@@ -38,7 +38,7 @@ public class FixDebugFive3
 	   {
 	   System.out.println("Item number too high");
 	   }
-	 if(item <= CUTOFF)
+	 if(item <= CUTOFF & item >= LOW)
 	   {
        System.out.println("Valid - in Automotive Department");
 	   }
