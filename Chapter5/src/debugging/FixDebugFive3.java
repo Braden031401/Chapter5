@@ -8,45 +8,44 @@ package debugging;
 import java.util.Scanner;
 
 public class FixDebugFive3
-{
+		{
    public static void main (String args[])
-   {
-      int item;
-      String output;
-      final int LOW = 111;
-      final int HIGH = 999;
-      final int CUTOFF = 500;
-      Scanner input = new Scanner(System.in);
-      calculateOutPut();
-   }
+   		{
+	   	int item;
+      	String output;
+      	final int LOW = 111;
+      	final int HIGH = 999;
+      	final int CUTOFF = 500;
+      	Scanner input = new Scanner(System.in);
+      	calculateOutPut();
+   		}
    public static void calculateOutPut()
-   {int item;
-   String output;
-   final int LOW = 111;
-   final int HIGH = 999;
-   final int CUTOFF = 500;
+		{
+		int item;
+		String output;
+		final int LOW = 111;
+		final int HIGH = 999;
+		final int CUTOFF = 500;
 	   Scanner input = new Scanner(System.in);
            
-      System.out.println("Please enter item number");
-      item = input.nextInt();
-      if(item < LOW) 
-    	  {
-    	  System.out.println("Item number too low");
-    	  }
-      else
-      {
-if(item > HIGH)
-output = "Item number too high";
-      }
-if(item <= CUTOFF)
-{
-             output = "Valid - in Automotive Department";
-}
-          else
-          {
-             output = "Valid - Item in Housewares Department";
-       System.out.println(output);
-          }
+	   System.out.println("Please enter item number");
+	   item = input.nextInt();
+	 if(item < LOW) 
+	   {
+       System.out.println("Item number too low");    
+	   }
+	 if(item > HIGH)
+	   {
+	   System.out.println("Item number too high");
+	   }
+	 if(item <= CUTOFF)
+	   {
+       System.out.println("Valid - in Automotive Department");
+	   }
+     if(item <= 999 & item >= 500)
+       {
+       System.out.println("Valid - Item in Housewares Department");
+       }
    }
 }
 

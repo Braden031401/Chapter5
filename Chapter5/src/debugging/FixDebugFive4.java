@@ -7,7 +7,7 @@ public class FixDebugFive4
    public static void main (String args[]) 
    {
       int one, two, three, four;
-      String str, output;
+      String str, output = null;
       str = JOptionPane.showInputDialog(null,"Enter an integer");
       one = Integer.parseInt(str);
       str = JOptionPane.showInputDialog(null,"Enter an integer");
@@ -18,17 +18,20 @@ public class FixDebugFive4
       four = Integer.parseInt(str);
       if(one > two & one > three & one > four)
       {
-         output = "Highest is " + one;
+              output = "Highest is " + one;
       }
-         if(two > one & two > three && two > four)
+         if(two > one & two > three & two > four)
          {
-            output = "Highest is " + two;
+              output = "Highest is " + two;
          }
          if(three > one & three > two & three > four)
          {
               output = "Highest is " + three;
          }
-      output = "Highest is " + four;
+         if(four > one & four > two & four > three)
+         {
+        	  output = "Highest is " + four;
+         }
       JOptionPane.showMessageDialog(null, output);
    }
 }
