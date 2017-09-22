@@ -26,36 +26,57 @@ public class AscendingAndDescending {
 		System.out.println("Enter the final number");
 		number3 = input.nextInt();
 		
-		if(number1 > number2 & number1 > number3)
-		{
-			numberLarge = number1;
-		}
-		if(number2 > number1 & number2 > number3)
-		{
-			numberLarge = number2;
-		}
-		if(number3 > number1 & number3 > number2)
-		{
-			numberLarge = number3;
-		}
-		if(number1 > number2 & number1 < number3)
-		{
-			numberMiddle = number1;
-		}
-		if(number2 > number1 & number2 < number3)
-		{
-			numberMiddle = number2;
-		}
-		if(number3 > number1 & number3 < number2)
-		{
-			numberMiddle = number3;
-		}
-		
-		System.out.println("The order from smallest to largest is, "+ numberMiddle +", "+ numberLarge );
 		
 		
-		
+		if(number1 > number2)
+		{
+			if(number2 > number3 & number3 < number1)
+				System.out.println("The order ascending is "+ number3 +", "+ number2 +", "+ number1);
+			if(number3 > number2 & number2 < number1)
+				System.out.println("The order ascending is "+ number2 +", "+ number3 +", "+ number1);
+		}
+		if(number2 > number3)
+		{
+			if(number1 > number3 & number3 < number2 & number1 < number2)
+				System.out.println("The order ascending is "+ number3 +", "+ number1 +", "+ number2);
+			if(number3 > number1 & number1 < number2)
+				System.out.println("The order ascending is "+ number1 +", "+ number3 +", "+ number2);
+		}
+		if(number3 > number2)
+		{
+			if(number2 > number1 & number1 < number3)
+				System.out.println("The order ascending is "+ number1 +", "+ number2 +", "+ number3);
+			if(number1 > number3 & number2 < number3)
+				System.out.println("The order ascending is "+ number2 +", "+ number1 +", "+ number3);
+		}
 
+
+		
+		if(number1 > number2)
+		{
+			if(number2 > number3 & number3 < number1)
+				System.out.println("The order descending is "+ number1 +", "+ number2 +", "+ number3);
+			if(number3 > number2 & number2 < number1)
+				System.out.println("The order descending is "+ number1 +", "+ number3 +", "+ number2);
+		}
+		if(number2 > number3)
+		{
+			if(number1 > number3 & number3 < number2 & number1 < number2)
+				System.out.println("The order descending is "+ number2 +", "+ number1 +", "+ number3);
+			if(number3 > number1 & number1 < number2)
+				System.out.println("The order descending is "+ number2 +", "+ number3 +", "+ number1);
+		}
+		if(number3 > number2)
+		{
+			if(number2 > number1 & number1 < number3)
+				System.out.println("The order descending is "+ number3 +", "+ number2 +", "+ number1);
+			if(number1 > number3 & number2 < number3)
+				System.out.println("The order descending is "+ number3 +", "+ number1 +", "+ number2);
+		
+		
+		
+		
+		}
 	}
 
 }
