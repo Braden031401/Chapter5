@@ -1,8 +1,8 @@
-package exercises;
+package schoolWork;
 
 import java.util.Scanner;
 
-public class DelgadosTacosChoice {
+public class DelgadosTacos {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -20,10 +20,9 @@ public class DelgadosTacosChoice {
 		double Churros;
 		double Enchilada;
 		
-		
-		
+		System.out.println("Enter how many of each item you would like to eat. >>> ");
 		menuOptions();
-
+		
 	}
 public static void menuOptions()
 {
@@ -52,39 +51,9 @@ public static void menuOptions()
 	double soda;
 	double churros;
 	double enchilada;
-	int choiceItems;
-	
-	//would you like to order order something
-	//choiceItems = input.whatever;
-	//if(choiceItems == 1)
-	
-		//how many would you like
-		//taco order = numberorder * price;
-		
-	
-	
-	
-	System.out.println("Welcome to Delgados Tacos! Here is our menu. What do you want to eat?");
-	choiceItems = input.nextLine();	
 	
 	System.out.println("Taco = 1.00");
-	System.out.println("Veggie Taco = 1.00");
-	System.out.println("Burrito = 1.50");
-	System.out.println("Water = 1.00");
-	System.out.println("Quesadilla = 2.00");
-	System.out.println("FruitPie = 1.50");
-	System.out.println("Soda = 1.50");
-	System.out.println("Churros = 2.00");
-	System.out.println("Enchilada = 2.00");
-
-	if(input.equalsIgnoreCase(Taco))
-	{
-		System.out.println("How many would you like?");
-		taco = input.nextDouble();	
-	}
-	
-	
-    
+    taco = input.nextDouble();	
 	System.out.println("Veggie Taco = 1.00");
     veggieTaco = input.nextDouble();
 	System.out.println("Burrito = 1.50");
@@ -118,10 +87,7 @@ public static void menuOptions()
 	FinalPrice = Taco + VeggieTaco + Burrito + HotSauce + Water + Quesadilla + FruitPie + Soda + Churros + Enchilada;
 	
 	System.out.println("Your final price is $"+ FinalPrice);
-	}
-
-}
-
 	
-
+	}
+}
 
