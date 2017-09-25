@@ -1,3 +1,10 @@
+	//would you like to order order something
+	//choiceItems = input.whatever;
+	//if(choiceItems == 1)
+	
+		//how many would you like
+		//taco order = numberorder * price;
+
 package exercises;
 
 import java.util.Scanner;
@@ -7,117 +14,67 @@ public class DelgadosTacosChoice {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Scanner input = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in);
+		String Taco = null;
+		String VeggieTaco = null;
+		String Burrito = null;
+		String HotSauce = null;
+		String Water = null;
+		String Quesadilla = null;
+		String FruitPie = null;
+		String Soda = null;
+		String Churros = null;
+		String Enchilada = null;
 		
-		double Taco;
-		double VeggieTaco;
-		double Burrito;
-		double HotSauce;
-		double Water;
-		double Quesadilla;
-		double FruitPie;
-		double Soda;
-		double Churros;
-		double Enchilada;
+		double Price1;
+		double Price2;
+		double Price3;
+		double Price4;
+		double Price5;
+		double Price6;
+		double Price7;
+		double Price8;
+		double Price9;
+		double Price10; 
+		
+		double taco = 1.00;
+		double veggieTaco = 1.00;
+		double burrito = 1.50;
+		double hotSauce = .50;
+		double water = 1.00;
+		double quesadilla = 2.00;
+		double fruitPie = 1.50;
+		double soda = 1.50;
+		double churros = 2.00;
+		double enchilada = 2.00;
+		double FinalPrice;
+		
+		int Amount1;
+		int Amount2;
+		int Amount3;
+		int Amount4;
+		int Amount5;
+		int Amount6;
+		int Amount7;
+		int Amount8;
+		int Amount9;
+		int Amount10;
+		
+		System.out.println("Welcome to Delgados Tacos! Here is our menu! What do you want to eat?");		
+		System.out.println("Taco = 1.00");	
+		System.out.println("Veggie Taco = 1.00");
+		System.out.println("Burrito = 1.50");
+		System.out.println("HotSauce = .50");
+		System.out.println("Water = 1.00");
+		System.out.println("Quesadilla = 2.00");
+		System.out.println("FruitPie = 1.50");	
+		System.out.println("Soda = 1.50");		
+		System.out.println("Churros = 2.00");
+		System.out.println("Enchilada = 2.00");
+		String input = scan.nextLine();
 		
 		
 		
-		menuOptions();
-
-	}
-public static void menuOptions()
-{
-	
-	Scanner input = new Scanner(System.in);
-	
-	double Taco = 1.00;
-	double VeggieTaco = 1.00;
-	double Burrito = 1.50;
-	double HotSauce = .50;
-	double Water = 1.00;
-	double Quesadilla = 2.00;
-	double FruitPie = 1.50;
-	double Soda = 1.50;
-	double Churros = 2.00;
-	double Enchilada = 2.00;
-	double FinalPrice;
-	
-	double taco;
-	double veggieTaco;
-	double burrito;
-	double hotSauce;
-	double water;
-	double quesadilla;
-	double fruitPie;
-	double soda;
-	double churros;
-	double enchilada;
-	int choiceItems;
-	
-	//would you like to order order something
-	//choiceItems = input.whatever;
-	//if(choiceItems == 1)
-	
-		//how many would you like
-		//taco order = numberorder * price;
-		
-	
-	
-	
-	System.out.println("Welcome to Delgados Tacos! Here is our menu. What do you want to eat?");
-	choiceItems = input.nextLine();	
-	
-	System.out.println("Taco = 1.00");
-	System.out.println("Veggie Taco = 1.00");
-	System.out.println("Burrito = 1.50");
-	System.out.println("Water = 1.00");
-	System.out.println("Quesadilla = 2.00");
-	System.out.println("FruitPie = 1.50");
-	System.out.println("Soda = 1.50");
-	System.out.println("Churros = 2.00");
-	System.out.println("Enchilada = 2.00");
-
-	if(input.equalsIgnoreCase(Taco))
-	{
-		System.out.println("How many would you like?");
-		taco = input.nextDouble();	
-	}
-	
-	
-    
-	System.out.println("Veggie Taco = 1.00");
-    veggieTaco = input.nextDouble();
-	System.out.println("Burrito = 1.50");
-    burrito = input.nextDouble();
-	System.out.println("HotSauce = .50");
-	hotSauce = input.nextDouble();
-	System.out.println("Water = 1.00");
-	water = input.nextDouble();
-	System.out.println("Quesadilla = 2.00");
-	quesadilla = input.nextDouble();
-	System.out.println("FruitPie = 1.50");
-	fruitPie = input.nextDouble();
-	System.out.println("Soda = 1.50");
-	soda = input.nextDouble();
-	System.out.println("Churros = 2.00");
-	churros = input.nextDouble();
-	System.out.println("Enchilada = 2.00");
-	enchilada = input.nextDouble();
-
-	Taco = taco * 1.00;
-	VeggieTaco = veggieTaco * 1.00;
-	Burrito = burrito * 1.50;
-	HotSauce = hotSauce * .50;
-	Water = water * 1.00;
-	Quesadilla = quesadilla * 2.00;
-	FruitPie = fruitPie * 1.50;
-	Soda = soda * 1.50;
-	Churros = churros * 2.00;
-	Enchilada = enchilada * 2.00;
-	
-	FinalPrice = Taco + VeggieTaco + Burrito + HotSauce + Water + Quesadilla + FruitPie + Soda + Churros + Enchilada;
-	
-	System.out.println("Your final price is $"+ FinalPrice);
 	}
 
 }
