@@ -13,10 +13,10 @@ public class RockPaperScissors {
 		int Choice;
 		Scanner input = new Scanner(System.in);
 						
-		System.out.println("Choose 1 for rock, 2 for Paper, or 3 for Scissors");
+		System.out.println("Choose 1 for rock, 2 for Paper, or 3 for Scissors.");
 		Choice = input.nextInt();
 		
-		if(Choice > 3)
+		if(Choice > 3 & Choice != 5)
 		{
 			System.out.println("Keep The Number Under 3!");
 		}
@@ -46,6 +46,10 @@ public class RockPaperScissors {
 		if (CPU == 3 & Choice == 1 || CPU == 1 & Choice == 2 || CPU == 2 & Choice == 3)
 		{
 			System.out.println("You Win!");
+		}
+		if(Choice == 5)
+		{
+			System.out.println("You Threw Spock...");
 		}
 
 		
