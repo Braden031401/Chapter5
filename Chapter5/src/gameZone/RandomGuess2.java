@@ -15,7 +15,7 @@ public class RandomGuess2 {
 		System.out.println("Guess a number between 1 and 100 >>> ");
 		x = input.nextInt();
 		
-y = (1 + (int)(Math.random() * 9));
+y = (1 + (int)(Math.random() * 100));
 
 	JOptionPane.showMessageDialog(null, "The number is "+ y);
 	
