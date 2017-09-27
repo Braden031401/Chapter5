@@ -47,7 +47,10 @@ public class RockPaperScissors {
 		{
 			System.out.println("You Win!");
 		}
-	
+		if(Choice == 5)
+		{
+			System.out.println("You Threw Spock...");
+		}
 
 		
 		
