@@ -9,6 +9,17 @@ public class RockPaperScissors {
 		//Rock = 1
 		//Paper = 2
 		//Scissors = 3
+		
+	for(int x = 0; x<5;)
+		{
+		displayRPS();
+		}
+	}
+	
+	public static void displayRPS() {
+		// TODO Auto-generated method stub
+		int PlayerScore = 0;
+		int CPUScore = 0;
 		int CPU;
 		int Choice;
 		Scanner input = new Scanner(System.in);
@@ -42,18 +53,21 @@ public class RockPaperScissors {
 		if (CPU == 1 & Choice == 3 || CPU == 2 & Choice == 1 & CPU == 3 & Choice == 2)
 		{
 			System.out.println("You Lose! Try Again.");
+			CPUScore = CPUScore + 1;
 		}
 		if (CPU == 3 & Choice == 1 || CPU == 1 & Choice == 2 || CPU == 2 & Choice == 3)
 		{
 			System.out.println("You Win!");
+			PlayerScore = PlayerScore + 1;
 		}
 		if(Choice == 5)
 		{
 			System.out.println("You Threw Spock...");
 		}
-
-		
+System.out.println("Here are the Scores : CPU - "+ CPUScore +" Player - "+ PlayerScore);
 		
 	}
+	
 
 }
+
